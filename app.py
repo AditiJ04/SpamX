@@ -4,7 +4,7 @@ import re
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import nltk
-nltk.download('stopwords')
+nltk.download('stopwords',quiet=True)
 
 # Load saved model, vectorizer, and label encoder
 model = pickle.load(open('spam_model.pkl', 'rb'))
